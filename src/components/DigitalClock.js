@@ -9,9 +9,7 @@ function DigitalClock(){
 
   return (
     <div className={styles.digitalClockContainer}>
-      <Textfit mode='single'>
-        <h1 className={styles.nextSignal}>NEXT SIGNAL</h1>
-      </Textfit>
+    
       <span>
         <span className={styles.minutes}>
           <div>{time.minutes[0]}</div>
@@ -23,6 +21,9 @@ function DigitalClock(){
           <div>{time.seconds[1]}</div>
         </span>
       </span>
+      <Textfit mode='single'>
+        <h1 className={styles.nextSignal}>NEXT SIGNAL</h1>
+      </Textfit>
     </div>
   )
 }

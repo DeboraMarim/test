@@ -5,7 +5,7 @@
   flex-direction: column;
   z-index: 3;
   position: absolute;
-  background-color: #252F46;
+  background-color: #1C202A;
   box-shadow: 2px 0px 46px -6px rgba(0,0,0,0.75);
 }
 
@@ -120,7 +120,7 @@
 
 .checkboxContainer input:checked ~ .checkmark {
   background: url('../images/checkbox.svg');
-  border: 1px solid #8F49DE;
+  border: 1px solid #da5613;
 }
 
 .checkboxContainer > input[type = checkbox] {
@@ -160,3 +160,9 @@
   align-items: center;
   letter-spacing: 0.1rem;
 }
+
+.logoText{
+  margin-left: 1%;
+  font-size: large;
+}
+ 

@@ -81,6 +81,7 @@ function Menu(){
     <div className={styles.menuContainer}>
       <header>
         <img src={binaryTradersLogo} width={25} height={25} alt="Binary Traders logo" />
+        <span className={styles.logoText}>Obsignals</span>
       </header>
       <div className={styles.signalTimeframe}>
         <p>Signal Timeframe</p>
@@ -90,7 +91,8 @@ function Menu(){
             checked={isTimeframeOneActived}
             icons={false}
             onClick={() => changeToTimeframeOne()}
-            onChange={() => {}} 
+            onChange={() => {}}
+            className={isTimeframeOneActived ? styles.toggleOrange : ''}
           />
         </span>
         <span className={styles.minuteOption}>
@@ -99,7 +101,8 @@ function Menu(){
             checked={isTimeframeFiveActived}
             icons={false}
             onClick={() => changeToTimeframeFive()}
-            onChange={() => {}} 
+            onChange={() => {}}
+            className={isTimeframeFiveActived ? styles.toggleOrange : ''}
           />
         </span>
       </div>

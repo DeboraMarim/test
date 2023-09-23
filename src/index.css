@@ -21,12 +21,12 @@ body {
   font-family: 'Inter', sans-serif;
   text-rendering: optimizeLegibility !important;
   font-smooth: always;
-  -webkit-text-stroke: 0.45px rgba(255, 255, 255, 0.1);
+  -webkit-text-stroke: 0.45px rgba(196, 0, 0, 0.1);
   font-optical-sizing: auto;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   color: #ffff;
-  background-color: #252F46;
+  background-color: #1C202A;
 }
 
 code {
@@ -35,12 +35,12 @@ code {
 }
 
 .react-toggle--checked .react-toggle-track {
-  background-color: #8F49DE !important;
+  background-color: #ff7c0a !important;
 }
 
 .react-toggle--checked .react-toggle-thumb {
   left: 1.1rem !important;
-  border-color: #8F49DE !important;
+  border-color: #ff7c0a !important;
 }
 
 .react-toggle-track {
