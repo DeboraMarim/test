@@ -21,6 +21,7 @@ import clock from '../images/clock.svg'
 import callButton from '../images/callButton.svg'
 
 import styles from '../styles/Card.module.css'
+import Rectangle from '../images/Rectangle.svg'
 
 function Card({ data }){
 
@@ -314,9 +315,9 @@ function Card({ data }){
               </span>
             </span>
           </footer>
-        ) : (
+        ) : ( /// em caso positivo
           <footer 
-           style={{background: data.color}}
+           style={{background: "transparent"}} //valor anterior data.color
            onMouseEnter={() => setTraderTimezoneTooltipIsOpen(true)}
            onMouseLeave={() => setTraderTimezoneTooltipIsOpen(false)}
            >
@@ -324,10 +325,25 @@ function Card({ data }){
             <p className={(data.impact === 'MEDIUM IMPACT')? styles.mediumImpactText : ''}>
             TTZ
             </p>
-            <img src={impact(data.impact)} width={14.6} height={16} alt="Impact Icon" />
+
+            <span style={{
+              display: 'flex',
+              flexDirection: 'column',
+              width: '20px',
+              height: '10px',
+              justifyContent: 'space-between'
+            }}>
+
+              <img src= {Rectangle} alt=''/>
+              <img src= {Rectangle} alt=''/>
+            
+            </span>
+
+            {/* <img src={impact(data.impact)} width={14.6} height={16} alt="Impact Icon" />
             <p className={(data.impact === 'MEDIUM IMPACT')? styles.mediumImpactText : ''}>
             {data.impact}
-            </p>
+            </p> */}
+            
           </span>
           <span
            className={styles.traderTimeZoneTooltip}

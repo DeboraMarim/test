@@ -18,7 +18,7 @@ button:focus-visible {
 }
 
 body {
-  font-family: 'Inter', sans-serif;
+  font-family: 'Montserrat','Inter', sans-serif;
   text-rendering: optimizeLegibility !important;
   font-smooth: always;
   -webkit-text-stroke: 0.45px rgba(196, 0, 0, 0.1);

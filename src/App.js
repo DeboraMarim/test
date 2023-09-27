@@ -13,7 +13,6 @@ import setUtcDefault from './utils/setUtcDefault'
 import './styles/App.css'
 import menuIcon from './images/menu.svg'
 import helpIcon from './images/helpIcon.svg'
-import shieldIcon from './images/shieldIcon.svg'
 import quotexButton from './images/quotexButton.svg'
 import iqOptionButton from './images/iqOptionButton.svg'
 import exnovaButton from './images/exnovaButton.svg'
@@ -24,8 +23,6 @@ import BinomoButton from './images/Binomo.svg'
 import CapitalbearButton from './images/Capitalbear.svg'
 
 import olimpTradeButton from './images/olimpTradeButton.svg'
-import trustedPartnerTag from './images/trustedPartnerTag.svg'
-import binaryTradersLogo from './images/binaryTradersLogo.svg'
 
 function App() {
   const { modalIsOpened, openModal } = useContext(ModalContext)
@@ -59,14 +56,16 @@ function App() {
           <button id='help' onClick={()=> openModal()}>
             <img src={helpIcon} alt='Help Icon' />
           </button>
-        <span className='helpTooltip'><Tooltip anchorSelect="#help">Help</Tooltip></span>
+        <span className='helpTooltip'><Tooltip anchorSelect="#help">Information</Tooltip></span>
         </header>
         <div className='main'>
           <aside>
-            <div className="cards">
-              <ListCards />
-            </div>
-          <DigitalClock />
+            
+              <div className="cards">
+                <ListCards />
+              </div>
+                <DigitalClock />
+            
           </aside>
           <div className="topBrokers">
             <div className='content'>
@@ -98,6 +97,7 @@ function App() {
               </div>
               <div className='infoBelow'>
                   <h1>Don't have an account ?</h1>
+                  <div>
                   <ul>
                     <li>
                        <p>Click the broker button and create an account for <strong>free</strong>.</p>
@@ -106,6 +106,7 @@ function App() {
                       <p>Receive <span class="cor-especial">$10,000.00</span> in your demo/training account.</p>
                     </li>
                   </ul>
+                  </div>
               </div>
             </div>
           </div>
